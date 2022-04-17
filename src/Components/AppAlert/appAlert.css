@@ -1,0 +1,107 @@
+:root{
+    --app-alert-color-gray-100:#f3f4f6;
+    --app-alert-color-gray-200:#e5e7eb;
+    --app-alert-color-info:#3b82f6;
+    --app-alert-color-warning:#fb923c;
+    --app-alert-color-warning-light:#fed7aa;
+    --app-alert-color-success:#16a34a;
+    --app-alert-color-error:#b91c1c;
+}
+.app-alert-{
+    display: block;
+}
+
+.app-alert-popup{
+    padding-bottom: 0;
+}
+
+.app-alert-container{
+    padding:0;
+}
+
+.app-alert-popup-warning .app-alert-title ,.swal2-warning ~ .app-alert-title{
+    background-color: var(--app-alert-color-warning);
+    color: white;
+}
+
+.app-alert-popup-success .app-alert-title ,.swal2-success ~ .app-alert-title{
+    background-color: var(--app-alert-color-success);
+    color: white;
+}
+
+.app-alert-popup-error .app-alert-title ,.swal2-error ~ .app-alert-title{
+    background-color: var(--app-alert-color-error);
+    color: white;
+}
+
+.app-alert-popup-info .app-alert-title ,.swal2-info ~ .app-alert-title{
+    background-color: var(--app-alert-color-info);
+    color: white;
+}
+
+.app-alert-title{
+    flex-grow: 0;
+    order:0;
+    padding:1rem;
+    font-size: 1.5rem;
+    text-align: start;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid var(--app-alert-color-gray-200);
+}
+
+.app-alert-icon{
+    order:1;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.app-alert-image{
+    order:2;
+}
+
+.app-alert-htmlcontainer{
+    order:3;
+}
+
+.app-alert-htmlcontainer.no-icon{
+    padding:3rem 0;
+}
+
+
+
+.app-alert-actions{
+    order:4;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 8px 8px;
+    padding:1rem;
+    background-color: var(--app-alert-color-gray-100);
+}
+
+.app-alert-btn{
+    cursor: pointer;
+    margin-left: 8px;
+    padding:12px 18px;
+    border-radius: 4px;
+    border:0px;
+}
+
+.app-alert-btn-success{
+    color:white;
+    background-color:var(--app-alert-color-success);
+}
+
+.app-alert-btn-warning{
+    color:white;
+    background-color:var(--app-alert-color-warning);
+}
+
+.app-alert-btn-danger{
+    color:var(--app-alert-color-error);
+    border:1px solid var(--app-alert-color-error);
+}
